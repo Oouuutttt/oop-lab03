@@ -49,4 +49,3 @@ print("Наушники:", product3.calculate_final_price())
 
 product1.set_price(-100)
 product2.set_stock(-5)
-print("Ошибка")
