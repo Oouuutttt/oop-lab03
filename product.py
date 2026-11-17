@@ -31,3 +31,17 @@ class Product:
         price_with_vat = self.calculate_price_with_vat()
         final_price = price_with_vat - price_with_vat * self.discount / 100
         return final_price
+
+
+
+
+product1 = Product("Ноутбук", 50000, 5, 10)
+product2 = Product("Телефон", 30000, 10, 5)
+product3 = Product("Наушники", 5000, 20, 15)
+
+print("Ноутбук:", product1.calculate_final_price())
+print("Телефон:", product2.calculate_final_price())
+print("Наушники:", product3.calculate_final_price())
+
+product1.set_price(-100)
+product2.set_stock(-5)
