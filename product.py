@@ -23,6 +23,10 @@ class Product:
         else:
             print("Количество товара не может быть меньше 0")
 
+    def restock(self, count):
+        self.__stock = self.__stock + count
+        print("Товар добавлен на склад")
+
     def calculate_price_with_vat(self):
         price_with_vat = self.__price * 1.20
         return price_with_vat
